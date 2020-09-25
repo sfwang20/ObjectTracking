@@ -40,7 +40,6 @@ int main(int argc, char* argv[])
     // Video output
     const string video_name = "output.mp4";
     int video_FourCC = static_cast<int>(inputVideo.get(CAP_PROP_FOURCC));     // Get Codec Type
-    // int video_FourCC = VideoWriter::fourcc('M', 'J', 'P', 'G');
     int video_fps = inputVideo.get(CAP_PROP_FPS);
     Size video_size = Size(int(inputVideo.get(CAP_PROP_FRAME_WIDTH)),
                            int(inputVideo.get(CAP_PROP_FRAME_HEIGHT)));
@@ -80,7 +79,6 @@ int main(int argc, char* argv[])
             {
                 if (pointTrackingFlag)
                 {
-                    // If the new point is within 'minDist' distance from an existing point, it will not be tracked
                     if (norm(currentPoint - trackingPoints[1][i]) <= minDist)
                     {
                         pointTrackingFlag = false;
@@ -125,10 +123,8 @@ int main(int argc, char* argv[])
         if (ch == 27)
             break;
 
-        // Swap the 'points' vectors to update 'previous' to 'current'
         std::swap(trackingPoints[1], trackingPoints[0]);
 
-        // Swap the images to update previous image to current image
         cv::swap(prevGrayImage, curGrayImage);
     }
 

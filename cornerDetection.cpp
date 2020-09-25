@@ -42,7 +42,6 @@ int main(int argc, char* argv[])
     outputVideo.open(video_name, video_FourCC, video_fps, video_size, true);
 
     
-
     while (true) {
         if (!inputVideo.read(frame)) break;
         
