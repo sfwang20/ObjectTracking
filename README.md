@@ -1,38 +1,32 @@
 # ObjectTracking  
-&emsp;
+
 ## Colored Object Detection 
-&emsp;
 
 透過的簡易的方法（色彩空間轉換操作、與mask做and運算、去雜訊）達到偵測影片中特定色彩的物體。 &emsp;
 
 ### demo 
 &emsp;
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/ColorObjDetect.gif) &emsp;
-
-## Lucas-Kanade algorithm   
 &emsp;
+## Lucas-Kanade algorithm
 使用電腦視覺中廣泛使用的Lucas-Kanade algorithm實現光流追蹤  &emsp;
 
 Lucas-Kanade algorithm：[An Iterative Image Registration Technique with an Application to Stereo Vision](http://cseweb.ucsd.edu/classes/sp02/cse252/lucaskanade81.pdf) &emsp;  
 
-### demo  
-&emsp;
+### demo 
 
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/tracking_airplane.gif)  &emsp;
   
   
 ## Corners detection and tracking 
-&emsp;
 
 ### goodFeaturesTrack v.s corner Harris track 
-&emsp;
 
 Shi-Tomasi algorithm：[Good Features to Track](http://www.ai.mit.edu/courses/6.891/handouts/shi94good.pdf)   &emsp;
 
 Harris corner detection：[A COMBINED CORNER AND EDGE DETECTOR](http://www.bmva.org/bmvc/1988/avc-88-023.pdf)  &emsp;
 
 ### demo  
-&emsp;
 
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/comparsion.gif)  &emsp;
 
