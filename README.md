@@ -6,7 +6,7 @@
 
 Lucas-Kanade algorithm：[An Iterative Image Registration Technique with an Application to Stereo Vision](http://cseweb.ucsd.edu/classes/sp02/cse252/lucaskanade81.pdf)
 
-###demo
+### demo
 
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/tracking_airplane.gif)
 
@@ -19,7 +19,7 @@ Shi-Tomasi algorithm：[Good Features to Track](http://www.ai.mit.edu/courses/6.
 
 Harris corner detection：[A COMBINED CORNER AND EDGE DETECTOR](http://www.bmva.org/bmvc/1988/avc-88-023.pdf)
 
-###demo
+### demo
 
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/comparsion.gif)
 
