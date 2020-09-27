@@ -1,23 +1,30 @@
 # ObjectTracking  
 
-## Colored Object Detection 
+## Colored Object Detection
+透過image transformation操作(color space、mask operation、blur）達到偵測影片中特定色彩的物體。 &emsp;
 
-透過的簡易的方法（色彩空間轉換操作、與mask做and運算、去雜訊）達到偵測影片中特定色彩的物體。 &emsp;
-
-### demo 
-&emsp;
+### demo
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/ColorObjDetect.gif) &emsp;
 &emsp;
+
 ## Lucas-Kanade algorithm
 使用電腦視覺中廣泛使用的Lucas-Kanade algorithm實現光流追蹤  &emsp;
 
 Lucas-Kanade algorithm：[An Iterative Image Registration Technique with an Application to Stereo Vision](http://cseweb.ucsd.edu/classes/sp02/cse252/lucaskanade81.pdf) &emsp;  
 
 ### demo 
+![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/tracking_airplane.gif)
+&emsp;
 
-![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/tracking_airplane.gif)  &emsp;
-  
-  
+## Optical flow by Farneback algorithm
+嘗試使用Farneback所提出的光流演算法
+Farneback algorithm(1)：[Two-Frame Motion Estimation Based on Polynomial Expansion](https://www.diva-portal.org/smash/get/diva2:273847/FULLTEXT01.pdf)
+Farneback algorithm(2)：[Polynomial expansion for orientation and motion estimation](http://www.diva-portal.org/smash/get/diva2:302485/FULLTEXT01.pdf)
+&emsp;
+### demo
+![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/farneback.gif)
+&emsp;
+
 ## Corners detection and tracking 
 
 ### goodFeaturesTrack v.s corner Harris track 
