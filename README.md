@@ -6,6 +6,8 @@
 ### demo
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/ColorObjDetect.gif) &emsp;
 &emsp;
+&emsp;
+
 
 ## Lucas-Kanade algorithm
 使用電腦視覺中廣泛使用的Lucas-Kanade algorithm實現光流追蹤  &emsp;
@@ -15,15 +17,22 @@ Lucas-Kanade algorithm：[An Iterative Image Registration Technique with an Appl
 ### demo 
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/tracking_airplane.gif)
 &emsp;
+&emsp;
 
-## Optical flow by Farneback algorithm
-嘗試使用Farneback所提出的光流演算法
+
+## Optical flow algorithm by Farneback
+使用Farneback所提出的光流演算法計算物體影片中每幀物體移動之光流。
+&emsp;
 Farneback algorithm(1)：[Two-Frame Motion Estimation Based on Polynomial Expansion](https://www.diva-portal.org/smash/get/diva2:273847/FULLTEXT01.pdf)
+&emsp;
 Farneback algorithm(2)：[Polynomial expansion for orientation and motion estimation](http://www.diva-portal.org/smash/get/diva2:302485/FULLTEXT01.pdf)
 &emsp;
+
 ### demo
 ![image](https://github.com/sfwang20/ObjectTracking/blob/master/demo/farneback.gif)
 &emsp;
+&emsp;
+
 
 ## Corners detection and tracking 
 
