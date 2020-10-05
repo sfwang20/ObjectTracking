@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.0)
 
-PROJECT(FilterImageGUI)
+PROJECT(ObjectTracking)
 
 set (CMAKE_CXX_STANDARD 11)
 
@@ -16,8 +16,14 @@ MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
+ADD_EXECUTABLE( ${PROJECT_NAME} ColoredObjDetect.cpp)
+TARGET_LINK_LIBRARIES( ${PROJECT_NAME} ${OpenCV_LIBS} )
+
 ADD_EXECUTABLE( ${PROJECT_NAME} cornerDetection.cpp)
 TARGET_LINK_LIBRARIES( ${PROJECT_NAME} ${OpenCV_LIBS} )
 
 ADD_EXECUTABLE( ${PROJECT_NAME} lucasKandeTracker.cpp)
+TARGET_LINK_LIBRARIES( ${PROJECT_NAME} ${OpenCV_LIBS} )
+
+ADD_EXECUTABLE( ${PROJECT_NAME} farnebackTracker.cpp)
 TARGET_LINK_LIBRARIES( ${PROJECT_NAME} ${OpenCV_LIBS} )
